@@ -166,7 +166,7 @@ export default function QuizForm() {
             </button>
           </div>
         </div>
-        <div className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl bg-[#d9d9d9] p-5 rounded" // Change this to your desired text color
+        <div className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-1xl bg-[#d9d9d9] p-5 rounded" // Change this to your desired text color
         dangerouslySetInnerHTML={{ __html: formattedQuiz.replace(/\n/g, '<br>') }}
       />
     </div>
