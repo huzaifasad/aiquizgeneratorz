@@ -126,7 +126,7 @@ export default function QuizForm() {
     const formattedQuiz = quiz.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
   
     return (
-      <div className="mt-4  rounded-lg max-h-[30rem] overflow-y-auto">
+      <div className="mt-4  rounded-lg max-h-[33rem] overflow-y-auto">
         <div className="flex justify-between mb-2">
           <button
            onClick={() => {
