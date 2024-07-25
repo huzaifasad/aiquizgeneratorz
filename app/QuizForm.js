@@ -123,10 +123,11 @@ export default function QuizForm() {
   };
 
   const renderQuizContent = () => {
-    const formattedQuiz = quiz.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-  
+    const formattedQuiz = quiz
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/#/g, '');  
     return (
-      <div className="mt-4  rounded-lg max-h-[33rem] overflow-y-auto">
+      <div className="mt-4  rounded-lg max-h-[30rem] overflow-y-auto">
         <div className="flex justify-between mb-2">
           <button
            onClick={() => {
@@ -165,13 +166,12 @@ export default function QuizForm() {
             </button>
           </div>
         </div>
-        <div className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl bg-[#d9d9d9] p-5 rounded" // Change this to your desired text color
+        <div className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl bg-[#d9d9d9] p-5 rounded" // Change this to your desired text color
         dangerouslySetInnerHTML={{ __html: formattedQuiz.replace(/\n/g, '<br>') }}
       />
     </div>
     );
   };
-  
   
   
 
