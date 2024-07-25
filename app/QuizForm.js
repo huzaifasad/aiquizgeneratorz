@@ -156,14 +156,14 @@ export default function QuizForm() {
               aria-label="Copy to Clipboard"
             >
               <FaCopy className="h-5 w-5" />
-            </button>
-            <button
-              onClick={printContent}
-              className="bg-[#434343] text-[#FFFFFF] p-2 rounded hover:bg-[#333333] transition-colors duration-200 flex items-center"
-              aria-label="Print Content"
-            >
-              <FaPrint className="h-5 w-5" />
-            </button>
+            // </button>
+            // <button
+            //   onClick={printContent}
+            //   className="bg-[#434343] text-[#FFFFFF] p-2 rounded hover:bg-[#333333] transition-colors duration-200 flex items-center"
+            //   aria-label="Print Content"
+            // >
+            //   <FaPrint className="h-5 w-5" />
+            // </button>
           </div>
         </div>
         <div className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-1xl bg-[#d9d9d9] p-5 rounded" // Change this to your desired text color
